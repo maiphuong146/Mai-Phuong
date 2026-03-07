@@ -59,6 +59,30 @@ navbar.style.top = "-80px";
 
 });
 
+/* Certificate Details Toggle */
+
+const details = document.querySelectorAll(".details-text");
+
+details.forEach(item => {
+
+item.addEventListener("click", function(){
+
+let proof = this.nextElementSibling;
+
+if(proof.style.display === "block"){
+
+proof.style.display = "none";
+
+}else{
+
+proof.style.display = "block";
+
+}
+
+});
+
+});
+
 
 /* Skills Expand */
 
